@@ -9,5 +9,19 @@ require 'config_parser/property'
 require 'config_parser/parser'
 
 module ConfigParser
-  # Your code goes here...
+  module_function
+
+  # Parses the contens of a config file
+  # @param contents<String> the config file's contents
+  # @return <Hash>
+  def parse(contents)
+    Parser.new(contents).parse
+  end
+
+  # Opens and parses a config file
+  # @param path<String> the path to the config file
+  # @return <Hash>
+  def open_and_parse(path)
+    parse(File.read(path))
+  end
 end

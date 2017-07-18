@@ -1,7 +1,7 @@
 module ConfigParser
   class Parser
     def initialize(contents)
-      @contents = contents
+      @contents = contents.split("\n")
     end
 
     def parse

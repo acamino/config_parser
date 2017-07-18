@@ -9,7 +9,7 @@ describe ConfigParser::Parser do
           'server_load_alarm=2.5',
           'user= john # comment can appear here as well',
           'test_mode = off'
-        ]
+        ].join("\n")
         parser = ConfigParser::Parser.new(valid_contents)
         parser.parse.must_equal server_load_alarm: 2.5, user: 'john', test_mode: false
       end
@@ -22,7 +22,7 @@ describe ConfigParser::Parser do
           'server_load_alarm 2.5',
           'user= john # comment can appear here as well',
           'test_mode = off'
-        ]
+        ].join("\n")
         parser = ConfigParser::Parser.new(invalid_contents)
         error = lambda do
           parser.parse
