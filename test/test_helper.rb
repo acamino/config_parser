@@ -3,5 +3,4 @@ require 'minitest/autorun'
 
 require 'config_parser'
 
-
-alias :context :describe
+alias context describe

@@ -1,4 +1,4 @@
-require "config_parser/version"
+require 'config_parser/version'
 require 'config_parser/parser/value_parser/truthy'
 require 'config_parser/parser/value_parser/falsey'
 require 'config_parser/parser/value_parser/numeric'
