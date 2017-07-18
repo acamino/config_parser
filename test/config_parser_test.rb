@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class ConfigParserTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::ConfigParser::VERSION
+describe ConfigParser do
+  it 'has a version number' do
+    ::ConfigParser::VERSION.wont_be_nil
   end
 end
