@@ -20,7 +20,7 @@ module ConfigParser
       attr_reader :line
 
       def valid?
-        @line.count('=') == 1
+        line.count('=') == 1
       end
     end
 
