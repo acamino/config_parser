@@ -1,5 +1,5 @@
 module ConfigParser
-  module Parser
+  class Parser
     class ValueParser
       class Numeric
         def self.try(value)

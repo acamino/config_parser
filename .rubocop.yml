@@ -16,6 +16,9 @@ Style/NumericPredicate:
 Style/SymbolArray:
   Enabled: false
 
+Style/SingleLineBlockParams:
+  Enabled: false
+
 AllCops:
   Exclude:
     - bin/*

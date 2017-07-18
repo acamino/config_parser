@@ -1,17 +1,17 @@
 module ConfigParser
-  module Parser
+  class Parser
     class PropertyParser
       def initialize(line)
         @line = line
       end
 
       def parse
-        raise InvalidPropertyError, "invalid property #{line}" unless valid?
+        raise InvalidContentError, "invalid content: #{line}" unless valid?
 
         prop_delimeter = '='
         prop = line.split(prop_delimeter)
         Property.new(
-          prop[0].strip, ValueParser.new(prop[1].strip).parse
+          prop[0].strip.to_sym, ValueParser.new(prop[1].strip).parse
         )
       end
 
@@ -24,6 +24,6 @@ module ConfigParser
       end
     end
 
-    class InvalidPropertyError < ArgumentError; end
+    class InvalidContentError < ArgumentError; end
   end
 end

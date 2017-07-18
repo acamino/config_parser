@@ -6,6 +6,7 @@ require 'config_parser/parser/value_parser/fallback'
 require 'config_parser/parser/value_parser'
 require 'config_parser/parser/property_parser'
 require 'config_parser/property'
+require 'config_parser/parser'
 
 module ConfigParser
   # Your code goes here...

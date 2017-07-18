@@ -4,7 +4,7 @@ require 'config_parser/parser/value_parser/numeric'
 require 'config_parser/parser/value_parser/fallback'
 
 module ConfigParser
-  module Parser
+  class Parser
     class ValueParser
       PARSERS = [
         Truthy,
