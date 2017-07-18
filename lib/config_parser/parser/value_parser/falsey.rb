@@ -1,5 +1,5 @@
 module ConfigParser
-  module Parser
+  class Parser
     class ValueParser
       class Falsey
         def self.try(value)
