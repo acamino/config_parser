@@ -14,9 +14,9 @@ describe ConfigParser::Parser::PropertyParser do
       it 'returns a property' do
         line = 'send_notifications off'
         parser = ConfigParser::Parser::PropertyParser.new(line)
-        -> {
+        lambda do
           parser.parse
-        }.must_raise ConfigParser::Parser::InvalidPropertyError
+        end.must_raise ConfigParser::Parser::InvalidPropertyError
       end
     end
   end

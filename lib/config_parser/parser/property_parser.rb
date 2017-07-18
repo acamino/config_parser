@@ -6,15 +6,13 @@ module ConfigParser
       end
 
       def parse
-        if valid?
-          prop_delimeter = '='
-          prop = line.split(prop_delimeter)
-          Property.new(
-            prop[0].strip, ValueParser.new(prop[1].strip).parse
-          )
-        else
-          raise InvalidPropertyError, "invalid property #{line}"
-        end
+        raise InvalidPropertyError, "invalid property #{line}" unless valid?
+
+        prop_delimeter = '='
+        prop = line.split(prop_delimeter)
+        Property.new(
+          prop[0].strip, ValueParser.new(prop[1].strip).parse
+        )
       end
 
       private
