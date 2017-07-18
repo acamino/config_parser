@@ -1,8 +1,7 @@
 require_relative '../../test_helper'
 
 describe ConfigParser::Parser::ValueParser do
-  describe '.parser' do
-
+  describe '#parse' do
     context 'when the value is truthy' do
       it 'returns true' do
         parser = ConfigParser::Parser::ValueParser.new('true')
