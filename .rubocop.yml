@@ -21,6 +21,7 @@ Style/SingleLineBlockParams:
 
 AllCops:
   Exclude:
+    - vendor/**/*
     - bin/*
     - config_parser.gemspec
     - Rakefile

@@ -1,23 +1,31 @@
 # Config Parser
 
-This library introduces a minimalistic parser for **config** files.
+[![Build Status](https://travis-ci.org/acamino/config_parser.svg?branch=master)](https://travis-ci.org/acamino/config_parser)
+
+A simple parser for **config** files.
 
 ## Local Development
 
-1. Fork the project [on Bitbucket](https://bitbucket.org/acamino/config_parser)
+1. Fork the project [on GitHub](https://github.com/acamino/config_parser)
    and clone your fork locally.
 
-        $ git clone git@bitbucket.org:username/config_parser.git
-        $ cd config_parser
-        $ git remote add upstream https://acamino@bitbucket.org/acamino/config_parser.git
+   ```bash
+   $ git clone git://github.com/username/config_parser.git
+   $ cd config_parser
+   $ git remote add upstream https://github.com/acamino/config_parser.git
+   ```
 
 1. Run the setup script.
 
-        $ bin/setup
+   ```bash
+   $ bin/setup
+   ```
 
 1. Make sure the tests succeed.
 
-        $ rake test
+   ```bash
+   $ rake test
+   ```
 
 ## What's a config file?
 
