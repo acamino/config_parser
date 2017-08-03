@@ -1,6 +1,11 @@
+![Config Parser](https://dl.dropboxusercontent.com/s/menyyf8bbyz1zri/config_parser.png)
+
 # Config Parser
 
 [![Build Status](https://travis-ci.org/acamino/config_parser.svg?branch=master)](https://travis-ci.org/acamino/config_parser)
+[![Code Climate](https://codeclimate.com/github/acamino/config_parser/badges/gpa.svg)](https://codeclimate.com/github/acamino/config_parser)
+[![Test Coverage](https://codeclimate.com/github/acamino/config_parser/badges/coverage.svg)](https://codeclimate.com/github/acamino/config_parser/coverage)
+[![Dependency Status](https://gemnasium.com/badges/github.com/acamino/config_parser.svg)](https://gemnasium.com/github.com/acamino/config_parser)
 
 A simple parser for **config** files.
 
