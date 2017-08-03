@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "rubocop", "~> 0.49"
+  spec.add_development_dependency "codeclimate-test-reporter", "~> 0.4.8"
 end
